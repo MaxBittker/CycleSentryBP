@@ -53,6 +53,10 @@
                     <img class="no-border" data-src="./assets/workbreakdown.png" width="100%">
                 </section>
                 <section>
+                    <h2>System Architecture</h2>
+                    <img class="no-border" data-src="./assets/systemdiagram.png" width="100%">
+                </section>
+                <section>
                     <h1>what will the final product look like?</h1>
                 </section>
                 <section>
@@ -77,10 +81,6 @@
                     <video controls>
                         <source src="./assets/cyclesentry_app.mp4" type="video/mp4"> Your browser does not support the video tag.
                     </video>
-                </section>
-                <section>
-                    <h2>System Architecture</h2>
-                    <img class="no-border" data-src="./assets/systemdiagram.png" width="100%">
                 </section>
             </section>
             <section>
@@ -265,7 +265,8 @@
                         <li>Node.js server</li>
                         &nbsp;&nbsp;&nbsp;&bull; JavaScript front-end and back-end
                         <br> &nbsp;&nbsp;&nbsp;&bull; Easy to host locally or in the cloud
-                        <br>
+                            <br>&nbsp;<br>
+
                         <li>
                             RethinkDB
                         </li>&nbsp;&nbsp;&nbsp;&bull; NoSQL interfaces more easily with JavaScript
@@ -297,7 +298,9 @@
                         <li class='fragment'>
                             LF has cheapest readers.</li>
                         <li class='fragment'>
-                            Approximate range is ~20cm </li>
+                            Approximate range is ~20cm
+                            <br>
+                        </li>
                         <br>
                         <li class='fragment'>
                             Investigating switch to active / semi-active tags</li>
@@ -311,10 +314,13 @@
                     <h2>Real Time Communications</h2>
                     <ul>
                         <li>
-                            Three Communication layers
+                            Three communication layers
                         </li>
                         <li>
                             State depends on many endpoints
+                        </li>
+                        <li>
+                            Robust to network disruption
                         </li>
                         <li>
                             Aiming for less than 4 second end to end response time
